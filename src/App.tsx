@@ -4,7 +4,7 @@ import Login from './pages/auth/Login'
 import { useState } from 'react'
 
 function App() {
-  const [token, setToken] = useState<boolean>(false)
+  const [token, setToken] = useState<boolean>(true)
   return (
     <main className="bg-background min-h-screen w-full">
       <Routes>

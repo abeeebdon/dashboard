@@ -8,6 +8,12 @@ module.exports = {
     extend: {
       colors: {
         background: 'hsl(120, 50%, 95%)',
+        primary: '#5D5FEF',
+        grey: {
+          900: '#151D48',
+          700: '#737791',
+          300: '#F9FAFB',
+        },
       },
     },
   },
