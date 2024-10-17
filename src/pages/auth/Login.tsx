@@ -29,7 +29,7 @@ const Login = () => {
     setIsLoading(true)
     setTimeout(() => {
       setIsLoading(false)
-      navigate('/dashboard')
+      navigate('/')
     }, 1000)
     console.log('Form submitted', data)
     setFormData(data)

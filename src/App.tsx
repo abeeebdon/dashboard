@@ -6,7 +6,7 @@ function App() {
   return (
     <main className="bg-background min-h-screen w-full">
       <Routes>
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/login" element={<Login />} />
       </Routes>
     </main>
