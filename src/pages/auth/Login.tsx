@@ -1,13 +1,16 @@
 import { userSchema } from '@/features/authValidate'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { useState } from 'react'
+import { Dispatch, SetStateAction, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 interface FormData {
   email: string
   password: string
 }
-const Login = () => {
+interface Props {
+  setToken: Dispatch<SetStateAction<boolean>>
+}
+const Login = ({ setToken }: Props) => {
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [formData, setFormData] = useState<FormData>({
     email: '',
@@ -29,6 +32,7 @@ const Login = () => {
     setIsLoading(true)
     setTimeout(() => {
       setIsLoading(false)
+      setToken(true)
       navigate('/')
     }, 1000)
     console.log('Form submitted', data)
