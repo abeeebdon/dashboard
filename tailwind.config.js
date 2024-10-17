@@ -11,8 +11,12 @@ module.exports = {
         primary: '#5D5FEF',
         grey: {
           900: '#151D48',
+          800: '#4079ED',
           700: '#737791',
           300: '#F9FAFB',
+        },
+        purples: {
+          100: '#F3E8FF',
         },
       },
     },
