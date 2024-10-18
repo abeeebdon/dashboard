@@ -1,4 +1,4 @@
-import MapChart from '@/components/WorldMap'
+// import MapChart from '@/components/WorldMap'
 
 const CountryMapping = () => {
   return (
@@ -6,9 +6,7 @@ const CountryMapping = () => {
       <h2 className="text-[20px] leading-8 font-semibold text-grey-shade">
         Sales Mapping by Country
       </h2>
-      <div className="mt-4">
-        <MapChart />
-      </div>
+      <div className="mt-4">{/* <MapChart /> */}</div>
     </article>
   )
 }
