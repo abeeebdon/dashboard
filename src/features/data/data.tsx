@@ -15,21 +15,21 @@ export const products: Product[] = [
   {
     name: 'Home Decor Range',
     value: 45,
-    color: 'bg-[#0095FF]',
+    color: '#0095FF',
   },
   {
     name: 'Home Decor Range',
     value: 45,
-    color: 'bg-[#00E096]',
+    color: '#00E096',
   },
   {
     name: 'Home Decor Range',
     value: 75,
-    color: 'bg-[#884DFF]',
+    color: '#884DFF',
   },
   {
     name: 'Home Decor Range',
     value: 45,
-    color: 'bg-[#FF8F0D]',
+    color: '#FF8F0D',
   },
 ]

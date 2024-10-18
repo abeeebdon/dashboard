@@ -16,18 +16,27 @@ const TopProducts = () => {
         </div>
         {products.map((product, index) => {
           const { name, value, color } = product
+          const impColor = `bg-[${color}]`
           return (
-            <div className="w-full grid grid-cols-6 p-2 text-[14px] leading-5 text-grey-80 border-b">
-              <p>{index + 1}</p>
+            <div className="w-full grid grid-cols-6 items-center  p-3 gap-2 text-[14px] leading-5 text-grey-80 border-b">
+              <p>0{index + 1}</p>
               <p className="col-span-2">{name}</p>
               <div className="col-span-2 flex items-center">
                 <Progress
-                  contentClassName={color}
-                  className="h-2 bg-red-300 text-green-300"
+                  contentClassName={impColor}
+                  className="h-2 bg-grey-100 "
                   value={value}
                 />
               </div>
-              <p className="col-span-1">{value}%</p>
+              <p
+                style={{
+                  borderColor: color,
+                  color: color,
+                }}
+                className="col-span-1 border-2 rounded-lg  w-fit p-2"
+              >
+                {value}%
+              </p>
             </div>
           )
         })}
