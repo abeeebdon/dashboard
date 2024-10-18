@@ -2,13 +2,13 @@ interface Props {
   src: string
   name: string
   details: string
-  number: number
+  number: number | string
   bgColor: string
 }
 const SalesComponent = ({ src, name, details, number, bgColor }: Props) => {
   return (
     <section
-      className={`rounded-lg w-full max-w-[180px] h-[184px] space-y-4 border p-4 bg-${bgColor}`}
+      className={`rounded-lg w-full max-w-[180px] min-h-[184px] space-y-2 shadow p-4 bg-${bgColor}`}
     >
       <img src={`/icons/${src}.svg`} alt={name} className="w-10 h-10" />
       <p className="text-grey-900 leading-8 text-[24px] font-semibold">

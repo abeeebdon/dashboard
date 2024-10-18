@@ -14,9 +14,15 @@ module.exports = {
           800: '#4079ED',
           700: '#737791',
           300: '#F9FAFB',
+          100: '#DCFCE7',
+          shade: '#05004E',
         },
         purples: {
           100: '#F3E8FF',
+        },
+        pink: {
+          50: '#FFF4DE',
+          100: '#FFE2E5',
         },
       },
     },
