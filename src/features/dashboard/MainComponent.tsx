@@ -2,6 +2,9 @@ import { Component } from '@/components/SimpleChart'
 import Col from './components/Col'
 import TopProducts from './components/TopProducts'
 import CountryMapping from './components/CountryMapping'
+import VolumeService from './components/VolumeService'
+import TargetReality from './components/TargetReality'
+import CustomerSatisfaction from './components/CustomerSatisfaction'
 
 const MainComponent = () => {
   return (
@@ -28,36 +31,15 @@ const MainComponent = () => {
             <Component />
           </div>
         </article>
-        <article className="bg-white col-span-2 p-4 rounded-[20px]">
-          <h2 className="text-[20px] leading-8 font-semibold text-grey-shade">
-            Customer Satisfaction
-          </h2>
-          <div className="mt-4">
-            <Component />
-          </div>
-        </article>
-        <article className="bg-white col-span-2 p-4 rounded-[20px]">
-          <h2 className="text-[20px] leading-8 font-semibold text-grey-shade">
-            Customer Satisfaction
-          </h2>
-          <div className="mt-4">
-            <Component />
-          </div>
-        </article>
+        <CustomerSatisfaction />
+        <TargetReality />
       </section>
 
       {/* Top PRoducts and others  */}
       <section className="mt-6 grid grid-cols-7 gap-4">
         <TopProducts />
         <CountryMapping />
-        <article className="bg-white col-span-2 p-4 rounded-[20px]">
-          <h2 className="text-[20px] leading-8 font-semibold text-grey-shade">
-            Customer Satisfaction
-          </h2>
-          <div className="mt-4">
-            <Component />
-          </div>
-        </article>
+        <VolumeService />
       </section>
     </>
   )

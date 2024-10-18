@@ -1,16 +1,16 @@
-// import MapChart from '@/components/WorldMap'
+import { CustomerChart } from '@/components/CustomerChart'
 
-const CountryMapping = () => {
+const CustomerSatisfaction = () => {
   return (
     <article className="bg-white col-span-2 p-4 rounded-[20px]">
       <h2 className="text-[20px] leading-8 font-semibold text-grey-shade">
-        Sales Mapping by Country
+        Customer Satisfaction
       </h2>
       <div className="mt-4">
-        <img src="/icons/maps.svg" alt="img" />
+        <CustomerChart />
       </div>
     </article>
   )
 }
 
-export default CountryMapping
+export default CustomerSatisfaction
