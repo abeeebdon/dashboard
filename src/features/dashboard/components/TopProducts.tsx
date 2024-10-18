@@ -15,8 +15,7 @@ const TopProducts = () => {
           <p className="col-span-1">Sales</p>
         </div>
         {products.map((product, index) => {
-          const { name, value, color } = product
-          const impColor = `bg-[${color}]`
+          const { name, value, color, impColor } = product
           return (
             <div className="w-full grid grid-cols-6 items-center  p-3 gap-2 text-[14px] leading-5 text-grey-80 border-b">
               <p>0{index + 1}</p>

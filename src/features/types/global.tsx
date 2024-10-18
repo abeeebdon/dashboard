@@ -6,4 +6,5 @@ export interface Product {
   name: string
   value: number
   color?: string
+  impColor?: string
 }
