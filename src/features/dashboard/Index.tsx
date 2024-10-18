@@ -7,7 +7,7 @@ const MainDashboard = () => {
     <>
       <Header />
       <SideBar />
-      <main className="rounded-sm fixed bottom-0 h-[81vh] right-0 w-[80vw] px-4">
+      <main className="rounded-sm fixed bottom-0 h-[81vh] right-0 w-[80vw] px-4 overflow-auto">
         <MainComponent />
       </main>
     </>

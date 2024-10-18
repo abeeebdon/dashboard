@@ -2,7 +2,7 @@ import SalesComponent from './SalesComponent'
 
 const Col = () => {
   return (
-    <section className="w-3/5  p-4 rounded-[20px] h-full bg-white">
+    <section className="w-3/5  p-4 pb-6 rounded-[20px] h-full bg-white">
       <article className="flex justify-between">
         <div className="flex flex-col">
           <h2 className="text-[20px] leading-8 font-semibold text-grey-shade">
@@ -19,34 +19,34 @@ const Col = () => {
           </p>
         </div>
       </article>
-      <article className="mt-5 flex items-center gap-4 ">
+      <article className="mt-10 pb-4 flex items-center gap-6 ">
         <SalesComponent
           name="Total Sales"
           details="+8% from yesterday"
           number="$1k"
-          src="customer"
-          bgColor="pink-100"
+          src="sales"
+          bgColor="#FFE2E5"
         />
         <SalesComponent
           name="Total Order "
           details="+5% from yesterday"
           number={300}
-          src="customer"
-          bgColor="pink-50"
+          src="order2"
+          bgColor="#FFF4DE"
         />
         <SalesComponent
           name="Product Sold"
           details="+1,2% from yesterday"
           number={8}
-          src="customer"
-          bgColor="grey-100"
+          src="sold"
+          bgColor="#DCFCE7"
         />
         <SalesComponent
           name="New Customers"
           details="0,5% from yesterday"
           number={8}
           src="customer"
-          bgColor="purples-100"
+          bgColor="#F3E8FF"
         />
       </article>
     </section>
