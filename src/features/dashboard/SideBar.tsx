@@ -8,7 +8,7 @@ const SideBar = () => {
   //     console.log(sidebar)
   //   }
   return (
-    <aside className="fixed bg-white top-0 bottom-0 left-0 w-[20vw] px-4 py-6">
+    <aside className="fixed bg-white top-0 bottom-0 overflow-auto left-0 w-[20vw] px-4 py-6">
       <div className="flex items-center gap-4 py-2">
         <img src="/icons/dummy_logo.svg" alt="logo" />
         <p>Comp</p>
@@ -31,6 +31,22 @@ const SideBar = () => {
             </NavLink>
           )
         })}
+      </article>
+      <article className="bg-primary p-4 rounded-[20px] mt-[100px] max-w-[238px] pt-6">
+        <div className="bg-white p-4 rounded-[16px] w-fit mx-auto">
+          <img src="/icons/dummy_icon.svg" alt="logo" />
+        </div>
+        <h2 className="my-2 text-center text-[20px] leading-8 font-semibold text-white">
+          Dabang Pro
+        </h2>
+        <p className="text-[12px] leading-4 font-medium text-center text-white">
+          Get access to all features on tetumbas
+        </p>
+        <div className="flex justify-center h-10 mt-[30px]">
+          <button className="bg-white w-full rounded-lg max-w-[136px] text-primary text-[16px] leading-6 font-600">
+            Get pro
+          </button>
+        </div>
       </article>
     </aside>
   )

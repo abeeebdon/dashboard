@@ -1,5 +1,6 @@
 import { Component } from '@/components/SimpleChart'
 import Col from './components/Col'
+import TopProducts from './components/TopProducts'
 
 const MainComponent = () => {
   return (
@@ -46,14 +47,7 @@ const MainComponent = () => {
 
       {/* Top PRoducts and others  */}
       <section className="mt-6 grid grid-cols-7 gap-4">
-        <article className="bg-white col-span-3 p-4 rounded-[20px]">
-          <h2 className="text-[20px] leading-8 font-semibold text-grey-shade">
-            Total Revenue
-          </h2>
-          <div className="mt-4">
-            <Component />
-          </div>
-        </article>
+        <TopProducts />
         <article className="bg-white col-span-2 p-4 rounded-[20px]">
           <h2 className="text-[20px] leading-8 font-semibold text-grey-shade">
             Customer Satisfaction
