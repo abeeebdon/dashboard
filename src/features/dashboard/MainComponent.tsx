@@ -5,11 +5,12 @@ import CountryMapping from './components/CountryMapping'
 import VolumeService from './components/VolumeService'
 import TargetReality from './components/TargetReality'
 import CustomerSatisfaction from './components/CustomerSatisfaction'
+import { BarChartMultiple } from '@/components/BarchartMultiple'
 
 const MainComponent = () => {
   return (
     <>
-      <section className="flex  h-fit justify-between gap-4">
+      <section className="flex  h-fit justify-between gap-4 ">
         <Col />
         <article className="p-4 rounded-[20px] w-2/5 bg-white">
           <h2 className="text-[20px] leading-8 font-semibold text-grey-shade">
@@ -28,7 +29,7 @@ const MainComponent = () => {
             Total Revenue
           </h2>
           <div className="mt-4">
-            <Component />
+            <BarChartMultiple />
           </div>
         </article>
         <CustomerSatisfaction />
