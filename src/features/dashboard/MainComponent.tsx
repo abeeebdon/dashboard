@@ -30,6 +30,17 @@ const MainComponent = () => {
           </h2>
           <div className="mt-4">
             <BarChartMultiple />
+            <hr />
+            <article className="mt-4 flex items-center gap-4 justify-center">
+              <div className="flex items-center gap-2">
+                <div className="size-3 rounded-full bg-[#0095FF]"></div>
+                <p>Online sales</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="size-3 rounded-full bg-[#0095FF]"></div>
+                <p>Offline sales</p>
+              </div>
+            </article>
           </div>
         </article>
         <CustomerSatisfaction />

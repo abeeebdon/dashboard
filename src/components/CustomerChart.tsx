@@ -20,12 +20,12 @@ const chartData = [
 
 const chartConfig = {
   desktop: {
-    label: 'Desktop',
-    color: 'hsl(var(--chart-1))',
+    label: 'Last month',
+    color: 'hsl(var(--chart-2))',
   },
   mobile: {
-    label: 'Mobile',
-    color: 'hsl(var(--chart-2))',
+    label: 'This month',
+    color: '#0095FF',
   },
 } satisfies ChartConfig
 

@@ -10,22 +10,23 @@ import {
 export const description = 'A multiple bar chart'
 
 const chartData = [
-  { month: 'January', desktop: 186, mobile: 80 },
-  { month: 'February', desktop: 305, mobile: 200 },
-  { month: 'March', desktop: 237, mobile: 120 },
-  { month: 'April', desktop: 73, mobile: 190 },
-  { month: 'May', desktop: 209, mobile: 130 },
-  { month: 'June', desktop: 214, mobile: 140 },
+  { day: 'Monday', online: 186, offline: 80 },
+  { day: 'Tuesday', online: 305, offline: 200 },
+  { day: 'Wednesday', online: 237, offline: 120 },
+  { day: 'Thursday', online: 305, offline: 245 },
+  { day: 'Friday', online: 209, offline: 130 },
+  { day: 'Saturday', online: 214, offline: 250 },
+  { day: 'Sunday', online: 214, offline: 140 },
 ]
 
 const chartConfig = {
   desktop: {
-    label: 'Desktop',
-    color: 'hsl(var(--chart-1))',
+    label: 'Online',
+    color: '#0095FF',
   },
   mobile: {
-    label: 'Mobile',
-    color: 'hsl(var(--chart-2))',
+    label: 'Offline',
+    color: '#05C283',
   },
 } satisfies ChartConfig
 
@@ -38,15 +39,14 @@ export function BarChartMultiple() {
           dataKey="month"
           tickLine={false}
           tickMargin={10}
-          axisLine={false}
           tickFormatter={(value) => value.slice(0, 3)}
         />
         <ChartTooltip
           cursor={false}
           content={<ChartTooltipContent indicator="dashed" />}
         />
-        <Bar dataKey="desktop" fill="var(--color-desktop)" radius={4} />
-        <Bar dataKey="mobile" fill="var(--color-mobile)" radius={4} />
+        <Bar dataKey="online" fill="var(--color-desktop)" radius={4} />
+        <Bar dataKey="offline" fill="var(--color-mobile)" radius={4} />
       </BarChart>
     </ChartContainer>
   )
