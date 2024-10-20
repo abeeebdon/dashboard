@@ -6,8 +6,8 @@ const CountryMapping = () => {
       <h2 className="text-[20px] leading-8 font-semibold text-grey-shade">
         Sales Mapping by Country
       </h2>
-      <div className="mt-4">
-        <img src="/icons/maps.svg" alt="img" />
+      <div className="mt-4 h-full">
+        <img src="/images/world.jpg" alt="img" className="h-[250px]" />
       </div>
     </article>
   )
