@@ -14,9 +14,9 @@ const Col = () => {
         </div>
         <div className="border border-[#C3D3E2] px-4  rounded-lg flex items-center gap-2">
           <img src="/icons/export.svg" alt="img" />
-          <p className="text-[14px] leading-5 font-medium text-[#0F3659]">
+          <button className="text-[14px] leading-5 font-medium text-[#0F3659]">
             Export
-          </p>
+          </button>
         </div>
       </article>
       <article className="mt-10 pb-4 flex items-center gap-6 ">
