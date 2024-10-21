@@ -11,7 +11,9 @@ const SideBar = () => {
     <aside className="fixed bg-white top-0 bottom-0 overflow-auto left-0 w-[20vw] px-4 py-6">
       <div className="flex items-center gap-4 py-2">
         <img src="/icons/dummy_logo.svg" alt="logo" />
-        <p>Comp</p>
+        <p className="text-grey-900 text-[30px] leading-[45px] font-semibold">
+          Dabang
+        </p>
       </div>
       <article className="flex flex-col justify-between gap-4 mt-5 overflow-auto">
         {sidebarNavs.map((sidebar, index) => {
